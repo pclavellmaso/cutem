@@ -1,0 +1,565 @@
+/*
+==============================
+Page: All
+Section: Slick Slider
+==============================
+*/
+
+.slick-dots {
+  text-align: center;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 21;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots li button {
+  border-color: #fff;
+  background-color: #fff;
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;
+  color: transparent;
+  height: 7px;
+  padding: 0;
+  width: 7px;
+}
+
+.slick-dots li button:hover {
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #000;
+  border-color: #000;
+}
+
+#gallery-left,
+#gallery-right {
+  cursor: pointer;
+}
+
+#gallery-left {
+  margin-left: -2%;
+}
+
+.slider-product .slick-dots,
+.slider-primary-product .slick-dots,
+.slider-primary-product-arte .slick-dots,
+.slick-evento .slick-dots,
+.slider-primary-product .slick-dots,
+.slider-primary-product-arte .slick-dots,
+.destacados-pantallacompleta .slick-dots {
+  width: 100%;
+  left: 0;
+  position: absolute !important;
+  z-index: 21;
+  display: flex !important;
+  justify-content: center;
+}
+
+.destacados-pantallacompleta .slick-dots {
+  bottom: 0px !important;
+}
+
+.slider-product .slick-dots,
+.slider-primary-product .slick-dots,
+.slider-primary-product-arte .slick-dots {
+  bottom: 10%;
+}
+
+.slider-product .slick-dots li,
+.slider-primary-product .slick-dots li,
+.slider-primary-product-arte .slick-dots li,
+.destacados-pantallacompleta .slick-dots li {
+  margin: .5em !important;
+  width: auto;
+}
+
+
+.slider-primary-product-arte .slick-dots li button,
+.slider-primary-product .slick-dots li button,
+.slider-product .slick-dots li button,
+.destacados-pantallacompleta .slick-dots li button {
+  padding: 0 !important;
+}
+
+.slider-primary-product-arte .slick-dots li button::before,
+.slider-primary-product .slick-dots li button::before,
+.slider-product .slick-dots li button::before,
+.destacados-pantallacompleta .slick-dots li button::before {
+  color: white;
+  opacity: 1;
+}
+
+.slider-product .slick-dots li button,
+.slider-primary-product .slick-dots li button,
+.slider-primary-product-arte .slick-dots li button,
+.destacados-pantallacompleta .slick-dots li button {
+  border-color: #fff;
+  background-color: #fff;
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;
+  color: transparent;
+  height: 7px;
+  padding: 0;
+  width: 7px;
+}
+
+.slider-product .slick-dots li button:hover,
+.slider-primary-product .slick-dots li button:hover,
+.slider-primary-product-arte .slick-dots li button:hover,
+.destacados-pantallacompleta .slick-dots li button:hover {
+  cursor: pointer;
+}
+
+.slider-product .slick-dots li.slick-active button,
+.slider-primary-product .slick-dots li.slick-active button,
+.slider-primary-product-arte .slick-dots li.slick-active button,
+.destacados-pantallacompleta .slick-dots li.slick-active button {
+  background-color: #000;
+  border-color: #000;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #000;
+  border-color: #000;
+}
+
+.slider-primary-product .slick-dots li.slick-active button::before,
+.slider-product .slick-dots li.slick-active button::before,
+.destacados-pantallacompleta .slick-dots li.slick-active button::before {
+  color: black;
+  opacity: 1;
+}
+
+.slider-primary-product.slick-initialized.slick-slider.slick-dotted,
+.slider-product.slick-initialized.slick-slider.slick-dotted,
+.destacados-pantallacompleta.slick-initialized.slick-slider.slick-dotted {
+  margin-bottom: 0 !important;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* *****************************************************
+*******************************************************
+******************************************************
+****************************************************
+CARRUSELES CON DOTS PLANOS
+****************************************************
+******************************************************
+*******************************************************
+******************************************************** */
+
+.carrusel-una-imagen .slick-dots li.slick-active button,
+.carrusel-una-imagen-dos .slick-dots li.slick-active button,
+.slick-proximos-eventos .slick-dots li.slick-active button,
+.carrusel-texto .slick-dots li.slick-active button,
+.carrusel-destacado .slick-dots li.slick-active button,
+.carrusel-productos-destacado .slick-dots li.slick-active button,
+ul.products .slick-dots li.slick-active button,
+.mas-obras .slick-dots li.slick-active button {
+  background-color: transparent !important;
+  border-color: inherit !important;
+}
+
+.carrusel-una-imagen .slick-dots,
+.carrusel-una-imagen-dos .slick-dots,
+.slick-proximos-eventos .slick-dots,
+.carrusel-texto .slick-dots,
+.carrusel-destacado .slick-dots,
+.carrusel-productos-destacado .slick-dots,
+ul.products .slick-dots,
+.mas-obras .slick-dots {
+  width: 100% !important;
+  text-align: left !important;
+  bottom: -16% !important;
+  left: 0 !important;
+  transform: inherit !important;
+  position: inherit !important;
+  z-index: 21 !important;
+  display: flex !important;
+  margin-top: 3em;
+}
+
+.carrusel-una-imagen .slick-dots li,
+.carrusel-una-imagen-dos .slick-dots li,
+.slick-proximos-eventos .slick-dots li,
+.carrusel-texto .slick-dots li,
+.carrusel-destacado .slick-dots li,
+.carrusel-productos-destacado .slick-dots li,
+ul.products .slick-dots li,
+.mas-obras .slick-dots li {
+  margin: 0px;
+  width: inherit;
+}
+
+.carrusel-una-imagen .slick-dots li button,
+.carrusel-una-imagen .slick-dots li button::before,
+.carrusel-una-imagen-dos .slick-dots li button,
+.carrusel-una-imagen-dos .slick-dots li button::before,
+.slick-proximos-eventos .slick-dots li button,
+.slick-proximos-eventos .slick-dots li button::before,
+.carrusel-texto .slick-dots li button,
+.carrusel-texto .slick-dots li button::before,
+.carrusel-destacado .slick-dots li button,
+.carrusel-destacado .slick-dots li button::before,
+.carrusel-productos-destacado .slick-dots li button,
+.carrusel-productos-destacado .slick-dots li button::before,
+ul.products .slick-dots li button,
+ul.products .slick-dots li button::before,
+.mas-obras .slick-dots li button,
+.mas-obras .slick-dots li button::before {
+  border-bottom: 1px solid #b5b5b5 !important;
+  color: inherit !important;
+  height: auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-radius: 0px !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  font-size: 0px !important;
+  content: none !important;
+}
+
+.carrusel-una-imagen .slick-dots li.slick-active button,
+.carrusel-una-imagen .slick-dots li button,
+.carrusel-una-imagen .slick-arrow,
+.carrusel-una-imagen-dos .slick-dots li.slick-active button,
+.carrusel-una-imagen-dos .slick-dots li button,
+.carrusel-una-imagen-dos .slick-arrow,
+.slick-proximos-eventos .slick-dots li.slick-active button,
+.slick-proximos-eventos .slick-dots li button,
+.slick-proximos-eventos .slick-arrow,
+.carrusel-texto .slick-dots li.slick-active button,
+.carrusel-texto .slick-dots li button,
+.carrusel-texto .slick-arrow,
+.carrusel-destacado .slick-dots li.slick-active button,
+.carrusel-destacado .slick-dots li button,
+.carrusel-destacado .slick-arrow,
+.carrusel-productos-destacado .slick-dots li.slick-active button,
+.carrusel-productos-destacado .slick-dots li button,
+.carrusel-productos-destacado .slick-arrow,
+ul.products .slick-dots li.slick-active button,
+ul.products .slick-dots li button,
+ul.products .slick-arrow,
+.mas-obras .slick-dots li.slick-active button,
+.mas-obras .slick-dots li button,
+.mas-obras .slick-arrow {
+  -webkit-transition: all 0.5s 0s ease !important;
+  -moz-transition: all 0.5s 0s ease !important;
+  -o-transition: all 0.5s 0s ease !important;
+  transition: all 0.5s 0s ease !important;
+}
+
+/* *****************************************************
+*******************************************************
+******************************************************
+****************************************************
+CARRUSELES CON DOTS PLANOS - FIN
+****************************************************
+******************************************************
+*******************************************************
+******************************************************** */
+/* .slider-primary-product img,
+.slider-primary-product-arte img {
+  height: 600px !important;
+  width: auto !important;
+} */
+
+.slick-next,
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev,
+.slick-prev:focus,
+.slick-prev:hover,
+.slick-next:before,
+.slick-prev:before,
+.slick-next::before,
+.slick-prev::before {
+  color: inherit !important;
+}
+
+.control-slider-projects {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 6rem;
+}
+
+.chocolat-in-container .chocolat-wrapper,
+.chocolat-in-container .chocolat-image-wrapper,
+.chocolat-in-container .chocolat-overlay {
+  position: fixed;
+}
+
+.chocolat-overlay {
+  background-color: inherit;
+}
+
+.chocolat-wrapper {
+  z-index: 1600;
+  color: inherit;
+  background-color: inherit;
+}
+
+/* .chocolat-lightboxx {
+  
+} */
+
+.control-slider-products {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+}
+
+.slider-press-notes .slick-slide,
+.slider-autor .slick-slide,
+.slider-intro-projects .slick-slide {
+  padding-right: 1em;
+}
+
+.carrusel-destacado .slick-slide {
+  padding-right: 3em !important;
+}
+
+.slider-press-notes img,
+.slider-autor img,
+.slider-intro-projects img,
+.carrusel-destacado img {
+  height: 300px !important;
+  width: auto !important;
+}
+
+@media (max-width: 900px) {
+
+  .slider-press-notes img,
+  .slider-autor img .carrusel-destacado img {
+    height: 300px !important;
+    width: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .slider-primary-product img,
+  .slider-primary-product-arte img,
+  .responsive img,
+  .relacionados img,
+  .slider-press-notes img,
+  .slider-autor img,
+  .slider-intro-projects img,
+  .carrusel-destacado img {
+    height: 600px !important;
+    height: intrinsic !important;
+    width: auto !important;
+  }
+
+
+  .slider-primary-product .slick-slide,
+  .slider-primary-product .woocommerce-product-gallery__image.slick-slide.slick-active,
+  .slider-press-notes .slick-slide,
+  .slider-autor .slick-slide,
+  .slider-intro-projects .slick-slide,
+  .carrusel-destacado .slick-slide {
+    width: auto !important;
+  }
+
+  .control-slider-products {
+    display: block;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 6rem;
+  }
+
+  .control-slider-products #arrow-left {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: -10%;
+  }
+
+  .control-slider-products #arrow-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: -10%;
+  }
+
+  .control-slider-products #arrow-left2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .control-slider-products #arrow-right2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .slider-primary-product .slick-slide,
+  .slider-primary-product-arte .slick-slide {
+    padding-right: 1.5em;
+  }
+
+  .slick-dots {
+    text-align: center;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 21;
+  }
+
+  .mas-obras .slick-dots {
+    text-align: center;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 21;
+  }
+}
+
+
+.slick-arrow {
+  color: transparent;
+  background-color: transparent !important;
+  background-size: 40% !important;
+  background-position: center !important;
+  width: 35px !important;
+  height: 35px !important;
+  border: 0 !important;
+  box-shadow: 0 0 0 !important;
+  position: absolute !important;
+  bottom: 45%;
+  z-index: 12 !important;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  font-size: 1em !important;
+}
+
+
+.slick-next {
+  background-image: url(../../img/flecha-2.png);
+  right: 2% !important;
+}
+
+.slick-prev {
+  background-image: url(../../img/flecha-1.png);
+  left: 2%;
+}
+
+.mas-obras .slick-list.draggable {
+  padding: 0 !important;
+}
+
+.slider-primary-product-arte .slick-prev,
+.slick-evento .slick-prev,
+.destacados-pantallacompleta .slick-prev {
+  left: 2% !important;
+}
+
+.mas-obras .slick-prev {
+  left: -1% !important;
+}
+
+.mas-obras .slick-next {
+  right: -1% !important;
+}
+
+/* SLIDER DE PRODUCTOS DESTACADOS */
+
+.slick-slide.hay-cuatro img {
+  width: auto;
+  height: 400px;
+}
+
+.slick-slide.hay-tres img {
+  width: auto;
+  height: 500px;
+}
+
+@media (min-width: 1200px) {
+  .slick-slide.hay-tres img {
+    width: auto;
+    height: 600px;
+  }
+}
+
+
+  @media (min-width: 1680px) {
+    .slick-slide.hay-tres img {
+      width: auto;
+      height: 700px;
+    }
+  }
+
+
+
+/* LIGHTBOX CHOCOLAT */
+
+.pswp__bg {
+  background-color: #fff !important;
+}
+
+.chocolat-wrapper .chocolat-left,
+.chocolat-wrapper .chocolat-close,
+.chocolat-wrapper .chocolat-right {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background: none;
+  z-index: 17;
+  color: inherit;
+}
+
+/* LIGHTBOX WOOCOMMERCE */
+
+.pswp__button--arrow--left::before,
+.pswp__button--arrow--right::before,
+.pswp__button.pswp__button--close,
+.pswp__button.pswp__button--close::before {
+  background: none;
+  background-image: none !important;
+}
+
+.pswp__button.pswp__button--close {
+  width: auto;
+  height: auto;
+}

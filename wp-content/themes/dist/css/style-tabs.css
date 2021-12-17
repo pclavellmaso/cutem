@@ -1,0 +1,88 @@
+/*
+==============================
+Page: All
+Section: Tabs
+==============================
+*/
+
+
+.nav-tabs .nav-item {
+  width: 25%;
+}
+
+.nav-tabs .nav-item-conservacion {
+  width: 33.3% !important;
+}
+
+
+
+.tabs-custom .nav-link {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 1.29;
+  text-align: center;
+  color: #b5b5b5 !important;
+  font-family: 'SuisseIntl';
+  font-weight: 400;
+}
+
+.tabs-custom .nav-link:focus,
+.tabs-custom .nav-link:hover,
+.tabs-custom .nav-link.active {
+  border-bottom: 1px solid #1d1d1f !important;
+  color: #1d1d1f !important;
+}
+
+.tabs-custom .nav-link {
+  border-bottom: 1px solid #b5b5b5 !important;
+}
+
+/*
+==============================
+Page: All
+Section: Tabs swipe mobile
+==============================
+*/
+
+
+  .swipe-tab-content {
+    position: relative;
+    min-height: 365px;
+  }
+
+  .swipe-tab {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    width: 50% !important;
+  }
+
+  .swipe-tab .nav-link {
+    color: #b5b5b5 !important;
+    border-bottom: 1px solid #b5b5b5 !important;
+  }
+
+  .swipe-tab .nav-link:focus,
+  .swipe-tab .nav-link:hover,
+  .swipe-tab .nav-link.active{
+
+  border-bottom: 1px solid #1d1d1f !important;
+  color: #1d1d1f !important;
+
+  }
+
+  .swipe-tabs .slick-track{
+    display:flex;
+  }
+
+  
+  .tabContacto .nav-link{
+    height: 50px;
+  }
+

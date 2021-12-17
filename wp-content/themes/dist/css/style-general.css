@@ -1,0 +1,492 @@
+/*
+==============================
+General Styles
+==============================
+*/
+
+body {
+  color: #1d1d1f;
+  background-color: #fff;
+  overflow-x: hidden;
+
+  &.modal-open {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+body a,
+body a:hover,
+body a:focus,
+body a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+div,
+input,
+textarea,
+button:active,
+button:focus,
+.btn,
+button,
+a[type="button"] {
+  outline: 0;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 0 0;
+}
+
+ul li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper,
+.m-layaout,
+.woocommerce-notices-wrapper,
+.wrapper-header {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+
+}
+
+.wrapper-fluid,
+.m-layaout-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.wrapper-right-fluid {
+  padding-right: 0px !important;
+}
+
+.wrapper-left-fluid {
+  padding-left: 0px !important;
+}
+
+.wrapper-left {
+  padding-left: 30px !important;
+}
+
+.wrapper-right {
+  padding-right: 30px !important;
+}
+
+
+.grecaptcha-badge {
+  right: -300px !important;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.site-footer ul li,
+.site-footer li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+
+.z-index-21 {
+  z-index: 21;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.btn {
+  background-image: none;
+  text-align: center;
+  width: auto;
+  border-style: solid;
+  /*   font-size: 1em; */
+}
+
+.bg-image-regular {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fc-adminbar {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.entry-content .woocommerce .woocommerce-notices-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-transition: all 1ms;
+  -moz-transition: all 1ms;
+  -o-transition: all 1ms;
+  transition: all 1ms;
+}
+
+.titulo-de-inicio {
+  font-size: 1.563em !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.12;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.w-100-2 {
+  width: 100%;
+}
+
+.w-33 {
+  width: 100%;
+
+}
+
+
+.card-header.collapsed span.fa-chevron-down {
+  transform: rotate(0deg);
+  -webkit-transition: all .7s;
+  -moz-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+
+.card-header span.fa-chevron-down {
+  transform: rotate(180deg);
+  -webkit-transition: all .7s;
+  -moz-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+
+.navigation.post-navigation .nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation.post-navigation .nav-links .nav-next {
+  text-align: right;
+}
+
+.shareaholic-canvas {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shareaholic-canvas .shareaholic-share-buttons-animation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-destacados img {
+  width: 100%;
+}
+
+/* FONDO VIDEO */
+
+.contenido__video {
+  height: 100%;
+  position: relative;
+}
+
+
+video.bg-video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* transform: translateX(-50%) translateY(-50%); */
+  z-index: 0;
+}
+
+
+
+/*
+==============================
+General Styles - Media Queries
+==============================
+*/
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+
+
+
+  .pr-400 {
+    padding-right: 3em !important;
+
+  }
+
+  .w-33 {
+    width: 33.3%;
+  }
+
+  .w-100-2 {
+    width: 50%;
+  }
+
+  .px-lg-8 {
+    padding-right: 7rem !important;
+    padding-left: 7rem !important;
+  }
+
+  .wrapper-fluid,
+  .m-layaout-fluid,
+  .woocommerce-notices-wrapper {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -o-transition: all 1ms;
+    transition: all 1ms;
+  }
+
+  .wrapper-header {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .wrapper,
+  .m-layaout {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .wrapper-left,
+  .m-layaout-left,
+  .wrapper-left-fluid {
+    padding-left: 5% !important;
+  }
+
+  .wrapper-right,
+  .m-layaout-right,
+  .wrapper-right-fluid {
+    padding-right: 5% !important;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .wrapper-header {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
+
+  .wrapper-fluid,
+  .m-layaout-fluid,
+  .woocommerce-notices-wrapper {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -o-transition: all 1ms;
+    transition: all 1ms;
+  }
+
+  .wrapper,
+  .m-layaout {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+
+  .wrapper-left,
+  .m-layaout-left,
+  .wrapper-left-fluid {
+    padding-left: 6% !important;
+  }
+
+  .wrapper-right,
+  .m-layaout-right,
+  .wrapper-right-fluid {
+    padding-right: 6% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .wrapper-header {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
+
+  .wrapper-fluid,
+  .m-layaout-fluid,
+  .woocommerce-notices-wrapper {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -o-transition: all 1ms;
+    transition: all 1ms;
+  }
+
+  .wrapper,
+  .m-layaout {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+  }
+
+  .wrapper-left,
+  .m-layaout-left,
+  .wrapper-left-fluid {
+    padding-left: 7% !important;
+  }
+
+  .wrapper-right,
+  .m-layaout-right,
+  .wrapper-right-fluid {
+    padding-right: 7% !important;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .wrapper-header {
+    padding-left: 3.5% !important;
+    padding-right: 3.5% !important;
+  }
+
+  .wrapper-fluid,
+  .m-layaout-fluid,
+  .woocommerce-notices-wrapper {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -o-transition: all 1ms;
+    transition: all 1ms;
+  }
+
+  .wrapper,
+  .m-layaout {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+  }
+
+  .wrapper-left,
+  .m-layaout-left,
+  .wrapper-left-fluid {
+    padding-left: 7% !important;
+  }
+
+  .wrapper-right,
+  .m-layaout-right,
+  .wrapper-right-fluid {
+    padding-right: 7% !important;
+  }
+
+}
+
+.text-decoration-underline {
+
+  text-decoration: underline;
+
+}
+
+
+
+@media (min-width: 1700px) {
+
+  .wrapper-header {
+    padding-left: 3.5% !important;
+    padding-right: 3.5% !important;
+  }
+
+  .wrapper-fluid,
+  .m-layaout-fluid,
+  .woocommerce-notices-wrapper {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -o-transition: all 1ms;
+    transition: all 1ms;
+  }
+
+  .wrapper,
+  .m-layaout {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+  }
+
+  .wrapper-left,
+  .m-layaout-left,
+  .wrapper-left-fluid {
+    padding-left: 7% !important;
+  }
+
+  .wrapper-right,
+  .m-layaout-right,
+  .wrapper-right-fluid {
+    padding-right: 7% !important;
+  }
+
+}
+
+
+
+@media (min-width: 3840px) {
+  .wrapper-header {
+    padding-left: 1.5% !important;
+    padding-right: 1.5% !important;
+  }
+
+  .wrapper-fluid,
+  .m-layaout-fluid,
+  .woocommerce-notices-wrapper {
+    padding-left: 3.2% !important;
+    padding-right: 3.2% !important;
+    -webkit-transition: all 1ms;
+    -moz-transition: all 1ms;
+    -o-transition: all 1ms;
+    transition: all 1ms;
+  }
+
+  .wrapper,
+  .m-layaout {
+    padding-left: 3.2% !important;
+    padding-right: 3.2% !important;
+  }
+
+  .wrapper-left,
+  .m-layaout-left,
+  .wrapper-left-fluid {
+    padding-left: 3.2% !important;
+  }
+
+  .wrapper-right,
+  .m-layaout-right,
+  .wrapper-right-fluid {
+    padding-right: 3.2% !important;
+  }
+
+}

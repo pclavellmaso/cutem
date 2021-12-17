@@ -1,0 +1,112 @@
+/*
+==============================
+Feature: Acordions
+Section: Cards
+==============================
+*/
+
+.card {
+    background-color: transparent !important;
+    background-clip: border-box;
+    border: none;
+    border-radius: unset !important;
+}
+
+.tituloAcordeonContacto {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+/*Animaciones y transiciones*/
+
+ .collapsed .fa-chevron-up {
+    transform: rotate(180deg);
+    transition: 0.7s;
+}
+
+.tituloAcordeonContacto .fa-chevron-up {
+    transition: 0.7s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* .card-header {
+    padding: 0rem 0rem !important;
+    margin-bottom: 0;
+    background-color: transparent;
+} */
+.accordionFiltros .card-header, .accordionContacto .card-header {
+    padding: 0rem 0rem !important;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.accordionFiltros .card-body {
+    padding: 1rem 0rem !important;
+}
+
+.accordion .card-header span{
+    color: inherit !important;
+}
+
+.accordion .card .card-header{
+    border-bottom: solid 1px #b5b5b5 !important;
+}
+
+/*Acordeones footer*/
+
+.footer-group > .card > .card-header {
+    padding: 0rem 0rem;
+    background-color: transparent;
+    border-bottom: 0.3px solid #b5b5b5;
+    padding-bottom: 0.5em;
+}
+
+@media (max-width: 992px) {
+
+    .suscribe-container > button {
+        font-size: 0.8rem;
+    }
+
+    footer .widgettitle {
+        margin-bottom: .0em !important;
+    }
+
+    .footer-group > .card > .widgettitle::after  {
+        font-weight: 300;
+        display: inline-block;
+        width: auto;
+        height: 0;
+        font-family: "Font Awesome 5 Pro";
+        content: "\f078";
+    }
+
+
+    .widgettitle {
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 992px) {
+    .px-2{
+        padding-right: .4rem!important;
+        padding-left: .4rem!important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

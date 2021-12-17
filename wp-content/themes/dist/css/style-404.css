@@ -1,0 +1,36 @@
+/*
+==============================
+Page: 404
+==============================
+*/
+
+.error-404 .btn {
+	width: 240px;
+}
+
+.error-404 .btn.border-black.color-black:hover {
+	border-color: #D61D1E;
+	background-color: #D61D1E !important;
+	color: #fff;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	transition: all 500ms;
+}
+
+.error-404 .bg-image-regular {
+	height: 45vh;
+}
+
+.text-error-2{
+	font-family: "Nunito";
+	font-size: 15px;
+	letter-spacing: 0;
+	line-height: 21px;
+}
+
+@media (min-width:768px) {
+	.error-404 .bg-image-regular {
+		height: 55vh;
+	}
+}

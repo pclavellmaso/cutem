@@ -1,0 +1,57 @@
+/*
+==============================
+Search
+==============================
+*/
+
+
+
+.input-activo::placeholder {
+  color: #1d1d1f;
+  opacity: 1;
+  font-size: 1em;
+  letter-spacing: 0;
+  font-weight: 400 !important;
+}
+
+
+input[type="search"],
+input#search {
+  width: 100%;
+  opacity: 1;
+  border-radius: 0px !important;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-bottom: solid 1px #b5b5b5;
+  color: #1d1d1f;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  font-weight: 400 !important;
+
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width:992px) {
+
+
+
+  input[type="search"],
+  input#search {
+    width: 100%;
+    opacity: 1;
+    border-radius: 0px !important;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-bottom: solid 1px #b5b5b5;
+    color: #1d1d1f;
+
+  }
+}
