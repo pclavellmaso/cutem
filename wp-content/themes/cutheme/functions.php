@@ -1,10 +1,10 @@
 <?php
 /**
- * Santa i cole functions and definitions
+ * Cutem functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package santa_cole
+ * @package cutem
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -12,7 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-if ( ! function_exists( 'santa_cole_setup' ) ) :
+if ( ! function_exists( 'cutem_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,14 +20,14 @@ if ( ! function_exists( 'santa_cole_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function santa_cole_setup() {
+	function cutem_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Santa i cole, use a find and replace
 		 * to change 'santa-cole' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'santa-cole', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'cutem', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -50,9 +50,9 @@ if ( ! function_exists( 'santa_cole_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'santa-cole' ),
-				'menu-2' => esc_html__( 'Secondary', 'santa-cole' ),
-				'menu-3' => esc_html__( 'Mobile', 'santa-cole' ),
+				'menu-1' => esc_html__( 'Primary', 'cutem' ),
+				'menu-2' => esc_html__( 'Secondary', 'cutem' ),
+				'menu-3' => esc_html__( 'Mobile', 'cutem' ),
 			)
 		);
 
@@ -77,7 +77,7 @@ if ( ! function_exists( 'santa_cole_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'santa_cole_custom_background_args',
+				'cutem_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -104,7 +104,7 @@ if ( ! function_exists( 'santa_cole_setup' ) ) :
 		);
 	}
 endif;
-add_action( 'after_setup_theme', 'santa_cole_setup' );
+add_action( 'after_setup_theme', 'cutem_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -113,94 +113,23 @@ add_action( 'after_setup_theme', 'santa_cole_setup' );
  *
  * @global int $content_width
  */
-function santa_cole_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'santa_cole_content_width', 1200 );
+function cutem_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'cutem_content_width', 1200 );
 }
-add_action( 'after_setup_theme', 'santa_cole_content_width', 0 );
+add_action( 'after_setup_theme', 'cutem_content_width', 0 );
 
 
 /**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ * Embed Sidebar widgets
  */
-function santa_cole_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'santa-cole' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'santa-cole' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-
-	register_sidebar(array(
-        'name' => 'Footer_Logo',
-        'id' => 'Footer_Logo',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-    ));
-	register_sidebar(array(
-        'name' => 'Footer_1',
-        'id' => 'Footer_1',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-    ));
-	register_sidebar(array(
-        'name' => 'Footer_2',
-        'id' => 'Footer_2',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-	));
-	register_sidebar(array(
-        'name' => 'Footer_3',
-        'id' => 'Footer_3',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-	));
-	register_sidebar(array(
-        'name' => 'Footer_4',
-        'id' => 'Footer_4',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-    ));
-	register_sidebar(array(
-        'name' => 'Shop_1',
-        'id' => 'Shop_1',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-	));
-	register_sidebar(array(
-        'name' => 'Shop_2',
-        'id' => 'Shop_2',
-				'before_title'  => '<span class="widgettitle d-block">',
-				'after_title'   => '</span>',
-	));
-	register_sidebar(array(
-        'name' => 'Nav_header',
-        'id' => 'Nav_header',
-				'before_widget'  => '<div id="%1$s" class="widget %2$s">',
-				'after_widget'   => "</div>",
-				'before_title'  => '<span class="widgettitle close-minicart d-flex w-100 justify-content-between align-items-center fs-1 mb-4">',
-				'after_title'   => '</span>',
-	));
-
-}
-add_action( 'widgets_init', 'santa_cole_widgets_init' );
-
-/* COMPATIBILIDAD CON YOAST */
-add_theme_support( 'yoast-seo-breadcrumbs' );
+require get_template_directory() . '/inc/embed-sidebar-widgets.php';
 
 /**
- * Embed Google Fonts
+ * Enqueue scripts and styles.
  */
-require get_template_directory() . '/inc/embed-fonts.php';
 
 /**
- * Embed Modular CSS
+ * Embed CSS Files
  */
 require get_template_directory() . '/inc/embed-styles.php';
 
@@ -210,25 +139,9 @@ require get_template_directory() . '/inc/embed-styles.php';
 require get_template_directory() . '/inc/embed-scripts.php';
 
 /**
- * add last nav item
+ * Implement the Custom Header feature. COMENTAT DE MOMENT
  */
-require get_template_directory() . '/inc/add-last-nav-item.php';
-
-/**
- * Enqueue scripts and styles.
- */
-function santa_cole_scripts() {
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-	  wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'santa_cole_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -320,11 +233,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
-/**
- * Custom WPML
- */
-require get_template_directory() . '/inc/custom-wpml.php';
-
 
 /**
  * ROLES DE USUARIOS PERSONALIZADOS Y PERMISOS Y PRIVILEGIOS
@@ -341,4 +249,9 @@ function print_r2($val) {
   echo '<pre>';
   print_r($val);
   echo  '</pre>';
+}
+
+function console_log($data) {
+
+    echo '<script>console.log('.json_encode($data).')</script>';
 }

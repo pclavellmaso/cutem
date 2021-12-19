@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 
     var height = $(window).height();
 
-    $('.chocolat-lightboxx').height(height);
+   
 
     if ($(window).width() < 768) {
     } else {
@@ -557,11 +557,4 @@ document.addEventListener('wpcf7mailsent', function (event) {
     location = '#';
   }
 }, false);
-
-Chocolat(document.querySelectorAll('.lightboxxx'), {
-  container: document.querySelector('.chocolat-lightboxx'),
-  loop: true,
-  imageSize: 'contain',
-  // ...
-})
 

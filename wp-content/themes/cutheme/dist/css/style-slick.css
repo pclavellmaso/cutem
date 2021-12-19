@@ -5,6 +5,11 @@ Section: Slick Slider
 ==============================
 */
 
+img.slick-slide {
+    height: 100%;
+    padding: 0em .65rem;
+}
+
 .slick-dots {
   text-align: center;
   bottom: -40px;

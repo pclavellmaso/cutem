@@ -1,4 +1,4 @@
-=== Santa i cole ===
+=== Cu theme ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,11 +10,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Santa i cole.
+A starter theme called Cutheme.
 
 == Description ==
 
-Intramundana Ecommerce Framework for Woocommerce
+Cutem sl Ecommerce Framework for Woocommerce
 
 == Installation ==
 
@@ -26,7 +26,7 @@ Intramundana Ecommerce Framework for Woocommerce
 
 = Does this theme support any plugins? =
 
-Santa i cole includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Cu theme includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

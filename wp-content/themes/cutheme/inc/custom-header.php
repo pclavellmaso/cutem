@@ -8,39 +8,37 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package santa_cole
+ * @package cutem
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses santa_cole_header_style()
+ * @uses cutem_header_style()
  */
-function santa_cole_custom_header_setup() {
+function cutem_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
-		apply_filters(
-			'santa_cole_custom_header_args',
-			array(
-				'default-image'      => '',
-				'default-text-color' => '000000',
-				'width'              => 1000,
-				'height'             => 250,
-				'flex-height'        => true,
-				'wp-head-callback'   => 'santa_cole_header_style',
+		apply_filters('cutem_custom_header_args', array(
+            'default-image'      => '',
+            'default-text-color' => '000000',
+            'width'              => 1000,
+            'height'             => 250,
+            'flex-height'        => true,
+            'wp-head-callback'   => 'cutem_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'santa_cole_custom_header_setup' );
+add_action( 'after_setup_theme', 'cutem_custom_header_setup' );
 
-if ( ! function_exists( 'santa_cole_header_style' ) ) :
+if ( ! function_exists( 'cutem_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see santa_cole_custom_header_setup().
+	 * @see cutem_custom_header_setup().
 	 */
-	function santa_cole_header_style() {
+	function cutem_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

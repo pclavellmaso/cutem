@@ -29,7 +29,7 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '127.0.0.1' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -56,6 +56,8 @@ define( 'AUTH_SALT',        'T@.X%HEZuM^$|+*mE16?WNQ~V5UCvF8(J|bw1fDxceyw$4=zz{2
 define( 'SECURE_AUTH_SALT', 'S>O}yv$p*5:o-MJw:@~tQ5Ylj=ACNq@g7J^dXIvaTNv{(|Mad2A4MxW)jcGyiN%h' );
 define( 'LOGGED_IN_SALT',   'Ep^HGAb@0Oz)1(aUaDr>Fuh*;PCh12L#jK=Uv:ih#E+1taAn8@7wGV<E_bdppO*D' );
 define( 'NONCE_SALT',       '/&,):jnjoJ{u~KN<||/q){$u8ykZ]]) C7K2m))JGCP&[k&zW!g~#XN7aq-bm_Gb' );
+
+define('FS_METHOD','direct');
 
 /**#@-*/
 
